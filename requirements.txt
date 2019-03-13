@@ -2,7 +2,6 @@ pandas
 SPARQLWrapper
 IPython
 numpy
-base64
 Bio
 wikipedia
 fuzzywuzzy
