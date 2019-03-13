@@ -1,0 +1,14 @@
+pandas
+json
+SPARQLWrapper
+IPython
+numpy
+base64
+Bio
+wikipedia
+fuzzywuzzy
+re
+tqdm
+urllib
+ipywidgets
+wikidata
