@@ -4,8 +4,6 @@ IPython
 numpy
 Bio
 wikipedia
-fuzzywuzzy
-re
 tqdm
 urllib
 ipywidgets
