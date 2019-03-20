@@ -5,6 +5,5 @@ numpy
 Bio
 wikipedia
 tqdm
-urllib
 ipywidgets
 wikidata
