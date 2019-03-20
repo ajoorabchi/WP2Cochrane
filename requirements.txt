@@ -6,4 +6,5 @@ Bio
 wikipedia
 tqdm
 ipywidgets
+jupyter_contrib_nbextensions
 wikidata
