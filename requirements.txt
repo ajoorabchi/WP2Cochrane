@@ -8,3 +8,5 @@ tqdm
 ipywidgets
 jupyter_contrib_nbextensions
 wikidata
+pageviewapi
+logging
