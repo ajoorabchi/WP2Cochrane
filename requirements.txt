@@ -11,3 +11,4 @@ wikidata
 pageviewapi
 dill
 biopython
+html2text
