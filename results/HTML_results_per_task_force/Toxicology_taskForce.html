@@ -1,161 +1,235 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script>
+$(document).ready( function () {
+    $('table.results').dataTable({
+    bAutoWidth: false, 
+        "columnDefs": [
+            { "width": "100%", "targets": 7 }
+        ]
+    });
+    //$('table.dataframe').dataTable();    
+} );
+</script>
 <class 'pandas.core.frame.DataFrame'>
 Int64Index: 11 entries, 202 to 4044
-memory usage: 704.0+ bytes<H3>Table Guide:</H3>        <p><b>Grouping:</b></p>        <p>In cases, where there are multiple version of a Cochrane review, they are grouped toghther (showing the same background color)        ,and are listed chronologically,latest version first.</p>        <p><b>Color Codes:</b></p>        <ol>          <li><p style="color:Green;">Green:  up-to-date and  CITED</p></li>          <li><p style="color:Red;">  Red:    up-to-date and  NOT CITED</p></li>        <li><p style="color:Orange;">Orange:  out-of-date and CITED</p></li>            <li><p style="color:Grey;">Grey:  out-of-date and NOT CITED</p></li>        </ol><hr><style  type="text/css" >
-    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 th {
+memory usage: 704.0+ bytes<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>null</th>
+      <th>dtype</th>
+    </tr>
+    <tr>
+      <th>column</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>WkD_disease</th>
+      <td>11621</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>WkD_diseaseLabel</th>
+      <td>11621</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>WP_en_article</th>
+      <td>4381</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>class</th>
+      <td>4208</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>importance</th>
+      <td>4199</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>taskForces</th>
+      <td>2442</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>cochrane_reviews_html</th>
+      <td>4381</td>
+      <td>non-null</td>
+      <td>object</td>
+    </tr>
+  </tbody>
+</table><H3>Table Guide:</H3>        <p><b>Grouping:</b></p>        <p>In cases, where there are multiple version of a Cochrane review, they are grouped toghther (showing the same background color)        ,and are listed chronologically,latest version first.</p>        <p><b>Color Codes:</b></p>        <ol>          <li><p style="color:Green;">Green:  up-to-date and  CITED</p></li>          <li><p style="color:Red;">  Red:    up-to-date and  NOT CITED</p></li>        <li><p style="color:Orange;">Orange:  out-of-date and CITED</p></li>            <li><p style="color:Grey;">Grey:  out-of-date and NOT CITED</p></li>        </ol><hr><style  type="text/css" >
+    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b th {
           text-align: left;
           font: blod 14px arial, sans-serif;
           vertical-align: top;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .row_heading {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .row_heading {
           text-align: left;
           font: bold 14px arial, sans-serif;
           vertical-align: top;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col0 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col0 {
           text-align: left;
           font: bold 12px arial, sans-serif;
           max-width: 100px;
           vertical-align: top;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col1 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col1 {
           text-align: left;
           font: bold 12px arial, sans-serif;
           max-width: 130px;
           vertical-align: top;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col2 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col2 {
           text-align: left;
           font: bold 12px arial, sans-serif;
           max-width: 110px;
           vertical-align: top;
           word-wrap: break-word;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col3 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col3 {
           text-align: left;
           font: bold 12px arial, sans-serif;
           max-width: 60px;
           vertical-align: top;
           word-wrap: break-word;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col4 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col4 {
           text-align: left;
           font: bold 12px arial, sans-serif;
           max-width: 90px;
           vertical-align: top;
           word-wrap: break-word;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col5 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col5 {
           text-align: left;
           font: bold 12px arial, sans-serif;
           max-width: 90px;
           vertical-align: top;
           word-wrap: break-word;
-    }    #T_d2729522_5de7_11e9_b967_93daf9e04dd2 .col6 {
+    }    #T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b .col6 {
           text-align: left;
           font: 12px arial, sans-serif;
           vertical-align: top;
-    }</style><table id="T_d2729522_5de7_11e9_b967_93daf9e04dd2" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >WkD_disease</th>        <th class="col_heading level0 col1" >WkD_diseaseLabel</th>        <th class="col_heading level0 col2" >WP_en_article</th>        <th class="col_heading level0 col3" >class</th>        <th class="col_heading level0 col4" >importance</th>        <th class="col_heading level0 col5" >taskForces</th>        <th class="col_heading level0 col6" >cochrane_reviews_html</th>    </tr>    <tr>        <th class="index_name level0" >index</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
+    }</style><table id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6b" class="results"><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >WkD_disease</th>        <th class="col_heading level0 col1" >WkD_diseaseLabel</th>        <th class="col_heading level0 col2" >WP_en_article</th>        <th class="col_heading level0 col3" >class</th>        <th class="col_heading level0 col4" >importance</th>        <th class="col_heading level0 col5" >taskForces</th>        <th class="col_heading level0 col6" >cochrane_reviews_html</th>    </tr>    <tr>        <th class="index_name level0" >index</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
                 <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row0" class="row_heading level0 row0" >202</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col0" class="data row0 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q408089">Q408089</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col1" class="data row0 col1" >mercury poisoning</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col2" class="data row0 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Mercury_poisoning">Mercury poisoning</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col3" class="data row0 col3" >B</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col4" class="data row0 col4" >2-High</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col5" class="data row0 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row0_col6" class="data row0 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row0" class="row_heading level0 row0" >202</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col0" class="data row0 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q408089">Q408089</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col1" class="data row0 col1" >mercury poisoning</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col2" class="data row0 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Mercury_poisoning">Mercury poisoning</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col3" class="data row0 col3" >B</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col4" class="data row0 col4" >2-High</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col5" class="data row0 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow0_col6" class="data row0 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row1" class="row_heading level0 row1" >249</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col0" class="data row1 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q423927">Q423927</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col1" class="data row1 col1" >Hypervitaminosis</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col2" class="data row1 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Hypervitaminosis">Hypervitaminosis</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col3" class="data row1 col3" >Start</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col4" class="data row1 col4" >3-Mid</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col5" class="data row1 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row1_col6" class="data row1 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row1" class="row_heading level0 row1" >249</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col0" class="data row1 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q423927">Q423927</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col1" class="data row1 col1" >Hypervitaminosis</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col2" class="data row1 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Hypervitaminosis">Hypervitaminosis</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col3" class="data row1 col3" >Start</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col4" class="data row1 col4" >3-Mid</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col5" class="data row1 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow1_col6" class="data row1 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row2" class="row_heading level0 row2" >621</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col0" class="data row2 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q3100515">Q3100515</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col1" class="data row2 col1" >hypervitaminosis A</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col2" class="data row2 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Hypervitaminosis_A">Hypervitaminosis A</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col3" class="data row2 col3" >Start</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col4" class="data row2 col4" >3-Mid</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col5" class="data row2 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Dermatology_task_force">Dermatology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row2_col6" class="data row2 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row2" class="row_heading level0 row2" >621</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col0" class="data row2 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q3100515">Q3100515</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col1" class="data row2 col1" >hypervitaminosis A</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col2" class="data row2 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Hypervitaminosis_A">Hypervitaminosis A</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col3" class="data row2 col3" >Start</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col4" class="data row2 col4" >3-Mid</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col5" class="data row2 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Dermatology_task_force">Dermatology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow2_col6" class="data row2 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row3" class="row_heading level0 row3" >862</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col0" class="data row3 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q3074499">Q3074499</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col1" class="data row3 col1" >fluoride toxicity</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col2" class="data row3 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Fluoride_toxicity">Fluoride toxicity</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col3" class="data row3 col3" >C</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col4" class="data row3 col4" >3-Mid</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col5" class="data row3 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row3_col6" class="data row3 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row3" class="row_heading level0 row3" >862</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col0" class="data row3 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q3074499">Q3074499</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col1" class="data row3 col1" >fluoride toxicity</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col2" class="data row3 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Fluoride_toxicity">Fluoride toxicity</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col3" class="data row3 col3" >C</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col4" class="data row3 col4" >3-Mid</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col5" class="data row3 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow3_col6" class="data row3 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row4" class="row_heading level0 row4" >1296</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col0" class="data row4 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q3400924">Q3400924</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col1" class="data row4 col1" >scorpion sting</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col2" class="data row4 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Scorpion_sting">Scorpion sting</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col3" class="data row4 col3" >Stub</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col4" class="data row4 col4" >3-Mid</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col5" class="data row4 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Dermatology_task_force">Dermatology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row4_col6" class="data row4 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row4" class="row_heading level0 row4" >1296</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col0" class="data row4 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q3400924">Q3400924</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col1" class="data row4 col1" >scorpion sting</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col2" class="data row4 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Scorpion_sting">Scorpion sting</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col3" class="data row4 col3" >Stub</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col4" class="data row4 col4" >3-Mid</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col5" class="data row4 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Dermatology_task_force">Dermatology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow4_col6" class="data row4 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row5" class="row_heading level0 row5" >2058</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col0" class="data row5 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q4223496">Q4223496</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col1" class="data row5 col1" >tick paralysis</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col2" class="data row5 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Tick_paralysis">Tick paralysis</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col3" class="data row5 col3" >C</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col4" class="data row5 col4" >3-Mid</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col5" class="data row5 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row5_col6" class="data row5 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row5" class="row_heading level0 row5" >2058</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col0" class="data row5 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q4223496">Q4223496</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col1" class="data row5 col1" >tick paralysis</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col2" class="data row5 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Tick_paralysis">Tick paralysis</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col3" class="data row5 col3" >C</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col4" class="data row5 col4" >3-Mid</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col5" class="data row5 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow5_col6" class="data row5 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row6" class="row_heading level0 row6" >4044</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col0" class="data row6 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q2625993">Q2625993</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col1" class="data row6 col1" >Latrodectism</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col2" class="data row6 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Latrodectism">Latrodectism</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col3" class="data row6 col3" >C</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col4" class="data row6 col4" >3-Mid</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col5" class="data row6 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Dermatology_task_force">Dermatology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row6_col6" class="data row6 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row6" class="row_heading level0 row6" >4044</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col0" class="data row6 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q2625993">Q2625993</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col1" class="data row6 col1" >Latrodectism</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col2" class="data row6 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Latrodectism">Latrodectism</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col3" class="data row6 col3" >C</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col4" class="data row6 col4" >3-Mid</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col5" class="data row6 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Dermatology_task_force">Dermatology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow6_col6" class="data row6 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row7" class="row_heading level0 row7" >248</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col0" class="data row7 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q423888">Q423888</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col1" class="data row7 col1" >Apitoxin</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col2" class="data row7 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Apitoxin">Apitoxin</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col3" class="data row7 col3" >Start</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col4" class="data row7 col4" >4-Low</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col5" class="data row7 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row7_col6" class="data row7 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row7" class="row_heading level0 row7" >248</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col0" class="data row7 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q423888">Q423888</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col1" class="data row7 col1" >Apitoxin</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col2" class="data row7 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Apitoxin">Apitoxin</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col3" class="data row7 col3" >Start</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col4" class="data row7 col4" >4-Low</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col5" class="data row7 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow7_col6" class="data row7 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row8" class="row_heading level0 row8" >1830</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col0" class="data row8 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q1641171">Q1641171</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col1" class="data row8 col1" >hypervitaminosis D</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col2" class="data row8 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Hypervitaminosis_D">Hypervitaminosis D</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col3" class="data row8 col3" >Start</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col4" class="data row8 col4" >4-Low</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col5" class="data row8 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row8_col6" class="data row8 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row8" class="row_heading level0 row8" >1830</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col0" class="data row8 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q1641171">Q1641171</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col1" class="data row8 col1" >hypervitaminosis D</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col2" class="data row8 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Hypervitaminosis_D">Hypervitaminosis D</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col3" class="data row8 col3" >Start</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col4" class="data row8 col4" >4-Low</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col5" class="data row8 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow8_col6" class="data row8 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row9" class="row_heading level0 row9" >3884</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col0" class="data row9 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q51302742">Q51302742</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col1" class="data row9 col1" >caffeinism</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col2" class="data row9 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Caffeinism">Caffeinism</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col3" class="data row9 col3" >Start</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col4" class="data row9 col4" >4-Low</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col5" class="data row9 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row9_col6" class="data row9 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row9" class="row_heading level0 row9" >3884</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col0" class="data row9 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q51302742">Q51302742</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col1" class="data row9 col1" >caffeinism</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col2" class="data row9 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Caffeinism">Caffeinism</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col3" class="data row9 col3" >Start</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col4" class="data row9 col4" >4-Low</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col5" class="data row9 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow9_col6" class="data row9 col6" >No matching publication found!</td>
             </tr>
             <tr>
-                        <th id="T_d2729522_5de7_11e9_b967_93daf9e04dd2level0_row10" class="row_heading level0 row10" >3998</th>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col0" class="data row10 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q2906693">Q2906693</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col1" class="data row10 col1" >baritosis</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col2" class="data row10 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Baritosis">Baritosis</a></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col3" class="data row10 col3" >Stub</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col4" class="data row10 col4" >4-Low</td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col5" class="data row10 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Pulmonology_task_force">Pulmonology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
-                        <td id="T_d2729522_5de7_11e9_b967_93daf9e04dd2row10_col6" class="data row10 col6" >No matching publication found!</td>
+                        <th id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6blevel0_row10" class="row_heading level0 row10" >3998</th>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col0" class="data row10 col0" ><a target="_blank" href="http://www.wikidata.org/entity/Q2906693">Q2906693</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col1" class="data row10 col1" >baritosis</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col2" class="data row10 col2" ><a target="_blank" href="https://en.wikipedia.org/wiki/Baritosis">Baritosis</a></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col3" class="data row10 col3" >Stub</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col4" class="data row10 col4" >4-Low</td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col5" class="data row10 col5" ><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Pulmonology_task_force">Pulmonology</a></p><p><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine/            Toxicology_task_force">Toxicology</a></p></td>
+                        <td id="T_469d17c8_5e34_11e9_b7f0_1b7c29003f6brow10_col6" class="data row10 col6" >No matching publication found!</td>
             </tr>
     </tbody></table>
