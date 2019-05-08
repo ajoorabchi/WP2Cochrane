@@ -1,4 +1,4 @@
-# WP2Cochrane - a tool for linking WikiProject Medicine to the Cochrane Library
+## WP2Cochrane - a tool for linking WikiProject Medicine to the Cochrane Library
 
 ## Launch in JupyterLab (recommended) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajoorabchi/WP2Cochrane/master?urlpath=lab/tree/index.ipynb)
 
