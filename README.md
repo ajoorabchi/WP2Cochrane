@@ -38,8 +38,4 @@
 - [Pulmonology](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Pulmonology_taskForce.html)
 - [Toxicology](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Toxicology_taskForce.html)
 
-[comment]: # (This actually is the most platform independent comment, you need to put an empty line before it)
 
-## License
-
-- This git repo is under the **GNU V3** license. [Find it here](https://github.com/ajoorabchi/WP2Cochrane/blob/master/LICENSE).
