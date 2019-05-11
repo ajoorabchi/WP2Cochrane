@@ -11,7 +11,7 @@
 - [PMIDs statistical summary 1 (LATEST VERSIONS of Cochrane reviews found and/or cited)](https://ajoorabchi.github.io/WP2Cochrane/results/PMIDs_latestVersions_only.html)
 - [PMIDs statistical summary 2 (OLD VERSIONS of Cochrane reviews found and/or cited)](https://ajoorabchi.github.io/WP2Cochrane/results/PMIDs_oldVersions_only.html)
 
-## Results of linking (Specialized HTML results for each WikiProject medicine task force)
+## Results of linking (Specialized HTML results per task force)
 - [Pathology](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Pathology_taskForce.html)
 - [Nephrology](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Nephrology_taskForce.html)
 - [Balkan military history](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Balkan%20military%20history_taskForce.html)
