@@ -4,6 +4,13 @@
 
 ## Launch in Jupyter Notebook  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajoorabchi/WP2Cochrane/master?filepath=index.ipynb)
 
+## Linking Results (full dataset)
+[Complete Tabular Results in HTML](https://ajoorabchi.github.io/WP2Cochrane/results/full_data.html)
+[Complete Tabular Results in CSV](https://ajoorabchi.github.io/WP2Cochrane/results/full_data.csv)
+
+
+
+
 [comment]: # (This actually is the most platform independent comment, you need to put an empty line before it)
 
 ## License
