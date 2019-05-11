@@ -27,7 +27,7 @@
 - [Emergency medicine and EMS](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Emergency%20medicine%20and%20EMS_taskForce.html)
 - [Psychiatry](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Psychiatry_taskForce.html)
 - [Medical genetics](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Medical%20genetics_taskForce.html)
-- [Military logistics and medicine](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Military logistics%20and%20medicine_taskForce.html)
+- [Military logistics and medicine](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Military%20logistics%20and%20medicine_taskForce.html)
 - [World War II](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/World%20War%20II_taskForce.html)
 - [Theoretical Linguistics](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Theoretical%20Linguistics_taskForce.html)
 - [Dermatology](https://ajoorabchi.github.io/WP2Cochrane/results/HTML_results_per_task_force/Dermatology_taskForce.html)
