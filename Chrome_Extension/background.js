@@ -24,38 +24,8 @@ chrome.runtime.onInstalled.addListener(function () {
     });
 
 
-    function doStuff(data) {
-
-        //Data is usable here
-
-        console.log('csv fetched.');
 
 
-        console.log(data);
-
-
-        var arrayLength = data.length;
-        for (var i = 1; i < 100; i++) {
-
-
-            console.log(data[i][2]);
-
-
-        }
-
-    }
-
-    function parseData(url, callBack) {
-        Papa.parse(url, {
-            download: true,
-            dynamicTyping: true,
-            complete: function (results) {
-                callBack(results.data);
-            }
-        });
-    }
-
-    parseData("https://ajoorabchi.github.io/WP2Cochrane/results/full_data.csv", doStuff);
 
 
 });
