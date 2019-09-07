@@ -19,11 +19,11 @@
         html,
         body {
             font-family: "Open Sans", sans-serif;
-            font-size: 14px;
+            font-size: 12px;
             margin: 0;
             min-height: 800px;
             padding: 0;
-            width: 750px;
+            width: 785px;
         }
 
         h1 {
@@ -32,13 +32,6 @@
             font-weight: 400;
             margin: 0;
             color: #2f5876;
-        }
-
-        a:link,
-        a:visited {
-            color: #000000;
-            outline: 0;
-            text-decoration: none;
         }
 
         img {
@@ -52,6 +45,7 @@
 
         .modal-content {
             padding: 0 22px;
+            font-size: 14px;
         }
 
         .modal-icons {
@@ -72,6 +66,14 @@
         .version {
             color: #444;
             font-size: 18px;
+            padding: 10px;
+        }
+
+        .credit {
+            color: #444;
+            font-size: 12px;
+            padding: 10px;
+            margin-left: 100px;
         }
 
         .flex-container {
@@ -108,18 +110,20 @@
         <img class="logo-icon" src="images/WP128.png"/>
         <img class="logo-icon" src="images/redcross128.png"/>
         <img class="logo-icon" src="images/icon128.png"/>
-        <span class="version">WP+Cochrane 1.0</span>
-        <span class="version"><a href="https://www.sciscanner.com/">Powered by SciScanner.com</a></span>
+        <span class="version">Wikipedia + Cochrane Library (1.0)</span><br>
+        <span class="credit">Powered by: <a href="https://www.sciscanner.com/">SciScanner.com</a></span>
+        <span class="credit">Source Code & Data: <a href="https://github.com/ajoorabchi/WP2Cochrane">GitHub repo</a></span>
+
     </h1>
 </div>
 <div class="modal-content">
-    <p>Linking Wikipedia articles to Cochrane reviews</p>
+    <p id="article_title">Linking Wikipedia articles to Cochrane reviews</p>
 </div>
 <div class="modal-icons">
     <div class="flex-container">
 
         <div id="flex">
-            <textarea id="textarea" rows="100" cols="90"></textarea>
+            <P id="textarea"></P>
         </div>
 
     </div>
